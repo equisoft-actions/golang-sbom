@@ -52,7 +52,7 @@ runs:
       run: cyclonedx-gomod mod -licenses -json -output ${{ steps.context.outputs.bom-path }}
 
     - name: Archive BOM
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: "!cancelled()"
       with:
         name: bom.json

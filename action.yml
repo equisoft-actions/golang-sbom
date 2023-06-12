@@ -30,7 +30,7 @@ runs:
         echo "bom-path=$working_directory/build/reports/bom.json" >> $GITHUB_OUTPUT
 
     - name: Download cyclonedx-gomod
-      uses: CycloneDX/gh-gomod-generate-sbom@v1
+      uses: CycloneDX/gh-gomod-generate-sbom@v2
       with:
         version: v1
     - name: Generate SBOM
